@@ -1,0 +1,6 @@
+{
+  "entry" : {
+    "base" : "/api/entry",
+    "slug" : "/api/entry/:slug"
+  }
+}

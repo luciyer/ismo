@@ -26,6 +26,7 @@ const entry_schema = new mongoose.Schema({
     type: String,
     default: "Spanish"
   },
+  example: String,
   country: {
     type: String,
     default: "Argentina"

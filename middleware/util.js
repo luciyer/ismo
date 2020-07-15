@@ -1,8 +1,6 @@
-const currentTime = () => {
-  const today = new Date()
-  return today.getHours() + ":" +
-         today.getMinutes() + ":" +
-         today.getSeconds();
+const localTime = () => {
+  const now = new Date()
+  return now.toLocaleTimeString();
 }
 
 exports.respondSuccess = (res, payload) => {
@@ -15,6 +13,6 @@ exports.respondFailure = (res, error) => {
 }
 
 exports.logTime = (req, res, next) => {
-  console.log(`[${currentTime()}] ${req.method}: ${req.path}`)
+  console.log(`[${localTime()}] ${req.method}: ${req.path}`)
   next()
 }

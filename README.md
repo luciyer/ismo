@@ -26,6 +26,7 @@ Response:
         "slug": "yuta",
         "__v": 0
     }
+    ...
 ]
 ```
 
@@ -37,9 +38,9 @@ Body:
 
 ```
 {
-  "title" : "Quilombo",
-  "definition" : "A disaster, a clusterfuck.",
-  "part_speech" : "Noun"
+  "title" : "Piola",
+  "definition" : "Really cool.",
+  "part_speech" : "a"
 }
 ```
 
@@ -52,7 +53,7 @@ Body:
 `PATCH` @ `/api/entry/:slug`
 
 ```
-{ "title" : "Quilombero" }
+{ "part_speech" : "adj" }
 ```
 
 _Note: slug will update if title is updated._

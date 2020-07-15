@@ -42,4 +42,4 @@ const entry_schema = new mongoose.Schema({
 })
 
 
-exports.Entry = mongoose.model('Entry', entry_schema)
+module.exports = mongoose.model('Entry', entry_schema)
